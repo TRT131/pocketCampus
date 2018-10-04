@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/admin" />
+            <EditText
+                android:gravity="center"
+                android:id="@+id/username"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号"
+                android:textColorHint="#dbdbdb"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                style="@style/resetEditStyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/password" />
+            <EditText
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/password"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入密码"
+                android:textColorHint="#dbdbdb"
+                android:textColor="@android:color/white"
+                style="@style/resetEditStyle"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_shape"
+            android:text="登录"
+            />
+        <TextView
+            android:id="@+id/register"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我还没有账号，点击注册"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
